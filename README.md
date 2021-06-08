@@ -6,6 +6,7 @@ We’d like you to create a small e-commerce application for us to get some insi
 # Installation
 - `git clone git@github.com:Orderchamp/assignment.git`
 - `composer install`
+- `npm install && npm run dev`
 - `php artisan serve`
 
 # Description
