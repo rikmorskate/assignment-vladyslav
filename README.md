@@ -1,10 +1,10 @@
 # Assignment
 ## _v1.1.0_
 
-We’d like you to create a small e-commerce application for us to get some insights in your skillset. This shouldn’t take more than two hours and it doesn’t have to be finished nor perfect.
+We’d like you to create a small e-commerce application for us to get some insights in your skillset. Focus on the PHP and especially the separation of concern, the UI is optional. Please dont spend more than two hours on this assignment.
 
 # Don’ts
-- Please do not spend too much time on it since we only use the assignment to discuss some of your choices.
+- Don't spend more than two hours
 - Do not include new packages.
 
 # Installation
@@ -18,4 +18,4 @@ Our users should be able to add products that are in stock to their shopping car
 Fifteen minutes after checkout, a user should receive a discount code of € 5,- for future purchases. If a user chooses to use a discount code, you should keep track of what discount code was applied and what amount was subtracted from the checkout.
 
 # Out-of-scope
-The UI doesn’t have to be pretty or present. Payments in this application are based on invoices. Invoices are out of scope :-)
+The UI is optional. Payments in this application are based on invoices. Invoices are out of scope :-)
