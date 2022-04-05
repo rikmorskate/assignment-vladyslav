@@ -1,11 +1,11 @@
 # Assignment
-## _v1.1.0_
+## _v1.2.0_
 
 We’d like you to create a small e-commerce application for us to get some insights in your skillset. Focus on the PHP and especially the separation of concern, the UI is optional. Please dont spend more than two hours on this assignment.
 
 # Don’ts
 - Don't spend more than two hours
-- Do not include new packages.
+- Do not include new packages
 
 # Installation
 - `git clone git@github.com:Orderchamp/assignment.git`
