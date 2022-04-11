@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "37a0aa25-22c2-4042-b4e3-a41179628d64",
+		"name": "assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://assignment.test/api/products",
+					"protocol": "http",
+					"host": [
+						"assignment",
+						"test"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://assignment.test/api/carts",
+					"protocol": "http",
+					"host": [
+						"assignment",
+						"test"
+					],
+					"path": [
+						"api",
+						"carts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get cart",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://assignment.test/api/carts/1",
+					"protocol": "http",
+					"host": [
+						"assignment",
+						"test"
+					],
+					"path": [
+						"api",
+						"carts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add product to cart",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quantity\": 2\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://assignment.test/api/carts/1/products/1",
+					"protocol": "http",
+					"host": [
+						"assignment",
+						"test"
+					],
+					"path": [
+						"api",
+						"carts",
+						"1",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove from cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://assignment.test/api/carts/1/products/1",
+					"protocol": "http",
+					"host": [
+						"assignment",
+						"test"
+					],
+					"path": [
+						"api",
+						"carts",
+						"1",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create checkout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cart_id\": 1,\n    \"user\": {\n        \"email\": \"tony@sopranos.net\",\n        \"name\": \"Tony Sopranos\",\n        \"address\": \"New Jersey\",\n        \"phone\": \"123123123123\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://assignment.test/api/checkouts",
+					"protocol": "http",
+					"host": [
+						"assignment",
+						"test"
+					],
+					"path": [
+						"api",
+						"checkouts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "checkout",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": \"SUCCESS\",\n    \"user\": {\n        \"email\": \"tony5@sopranos.net\",\n        \"name\": \"Tony Sopranos\",\n        \"address\": \"New Jersey\",\n        \"phone\": \"123123123123\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://assignment.test/api/checkouts/1",
+					"protocol": "http",
+					"host": [
+						"assignment",
+						"test"
+					],
+					"path": [
+						"api",
+						"checkouts",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
